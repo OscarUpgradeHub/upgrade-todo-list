@@ -1,0 +1,201 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  font-family: 'Fira sans', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  background: #374151;
+  color: #FFF;
+}
+
+/* center on bigger screens */
+header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#date {
+  padding: 2rem;
+  margin: 0;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #6B7280;
+  margin-bottom: 1rem;
+}
+
+#new-task-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+input, button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/*push to far right*/
+#new-task-input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
+  background-color: #1F2937;
+  padding: 1rem;
+  border-radius: 3rem;
+  margin-right: 1rem;
+  color: #FFF;
+  font-size: 1.25rem;
+}
+
+#new-task-input::-webkit-input-placeholder {
+  color: #6B7280;
+}
+
+#new-task-input:-ms-input-placeholder {
+  color: #6B7280;
+}
+
+#new-task-input::-ms-input-placeholder {
+  color: #6B7280;
+}
+
+#new-task-input::placeholder {
+  color: #6B7280;
+}
+
+/*Allows background to be clipped by element*/
+#new-task-submit {
+  color: #EC4899;
+  font-size: 1.25rem;
+  font-weight: 700;
+  background-image: -webkit-gradient(linear, left top, right top, from(#EC4899), to(#8B5CF6));
+  background-image: linear-gradient(to right, #EC4899, #8B5CF6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#new-task-submit:hover {
+  opacity: 0.8;
+}
+
+#new-task-submit:active {
+  opacity: 0.6;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.task-list {
+  padding: 1rem;
+}
+
+.task-list h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #6B7280;
+  margin-bottom: 1rem;
+}
+
+#tasks .task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #111827;
+  padding: 1rem;
+  border-radius: 3rem;
+  margin-bottom: 1rem;
+}
+
+/*Block: Displays an element as a block element. It starts on a new line and takes up take up as much horizontal space as they can*/
+.task .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
+}
+
+.task .content .text {
+  color: #FFF;
+  font-size: 1.125rem;
+  width: 100%;
+  display: block;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.task .task .content .text:not(:-moz-read-only) {
+  color: #EC4899;
+}
+
+.task .task .content .text:not(:read-only) {
+  color: #EC4899;
+}
+
+.task .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.task .actions button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.task .actions button:hover {
+  opacity: 0.8;
+}
+
+.task .actions button:active {
+  opacity: 0.6;
+}
+
+.task .actions .edit {
+  background-image: -webkit-gradient(linear, left top, right top, from(#EC4899), to(#8B5CF6));
+  background-image: linear-gradient(to right, #EC4899, #8B5CF6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.task .actions .delete {
+  color: #a00404;
+}
+/*# sourceMappingURL=styles.css.map */
